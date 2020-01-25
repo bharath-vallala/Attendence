@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".message_frag"
+    android:background="@color/yellow_grad">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logged in as"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:drawableLeft="@drawable/shield"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        >
+
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:elevation="10dp"
+          app:cardElevation="10dp"
+        android:layout_marginTop="50dp"
+          android:layout_marginStart="5dp"
+          android:layout_marginEnd="5dp"
+          app:cardCornerRadius="30dp"
+          android:layout_gravity="center"
+          >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp"
+              >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/name"
+          android:textColor="@color/black"
+          android:text="bhaskar"
+          android:padding="10dp"
+          android:drawableLeft="@drawable/user"
+          android:drawablePadding="5dp"
+          android:textSize="30dp"
+          >
+
+      </TextView>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/email"
+              android:text="bhaskar@gmail.com"
+              android:textSize="30dp"
+              android:padding="10dp"
+              android:drawableLeft="@drawable/email"
+              android:drawablePadding="5dp"
+              android:textColor="@color/black"
+
+              >
+
+          </TextView>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/phn"
+                  android:text="12365"
+                  android:textSize="30dp"
+                  android:padding="10dp"
+                  android:drawableLeft="@drawable/phone"
+                  android:drawablePadding="5dp"
+                  android:textColor="@color/black"
+
+                  >
+
+              </TextView>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/dept"
+                  android:drawableLeft="@drawable/dept"
+                  android:drawablePadding="5dp"
+                  android:text="computer science"
+                  android:textSize="30dp"
+                  android:padding="10dp"
+                  android:textColor="@color/black"
+
+                  >
+
+              </TextView>
+
+
+
+          </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:id="@+id/logout"
+        android:textColor="@color/black"
+android:layout_marginTop="20dp"
+        android:background="@drawable/inv_button"
+        android:layout_gravity="center">
+
+    </Button>
+</LinearLayout>
+
+
+</FrameLayout>

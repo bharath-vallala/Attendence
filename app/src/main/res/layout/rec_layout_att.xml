@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yellow_grad"
+    android:padding="5dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            >
+
+
+            <TextView
+                android:id="@+id/stuent_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="Name"
+                android:drawablePadding="5dp"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/roll_num_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/number"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Roll Number"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stuent_name_label" />
+
+
+            <TextView
+                android:id="@+id/stuent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="120dp"
+                android:padding="5dp"
+                android:text="student name"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                app:layout_constraintStart_toEndOf="@+id/stuent_name_label"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/father_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Father Name"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/father"
+                android:drawablePadding="5dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/roll_num_label" />
+
+            <TextView
+                android:id="@+id/father_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="8dp"
+                android:padding="5sp"
+                android:text="father name"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+
+                app:layout_constraintStart_toEndOf="@+id/father_name_label"
+                app:layout_constraintTop_toBottomOf="@+id/roll_num" />
+
+            <TextView
+                android:id="@+id/roll_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="8dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+
+                android:text="123567892"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/roll_num_label"
+                app:layout_constraintTop_toBottomOf="@+id/stuent_name" />
+
+
+            <Button
+                android:id="@+id/button_present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="present"
+                android:drawableLeft="@drawable/present"
+                android:drawablePadding="5dp"
+                android:background="@drawable/inv_button"
+                android:animateLayoutChanges="true"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button_absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="absent"
+                android:drawableLeft="@drawable/absent"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:background="@drawable/inv_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:animateLayoutChanges="true"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:gravity="center"
+                android:text="send message"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/send_message"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:background="@drawable/inv_button"
+                android:id="@+id/send_message"
+                android:animateLayoutChanges="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </Button>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</LinearLayout>

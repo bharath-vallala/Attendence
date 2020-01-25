@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Attendence_frag"
+    android:background="@color/yellow_grad">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow_grad">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msc_card1"
+        android:background="@color/yellow_grad"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:cardElevation="10dp"
+app:cardCornerRadius="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Msc"
+            android:textSize="30dp"
+            android:id="@+id/course_id"
+            android:padding="10dp"
+            android:layout_gravity="center">
+
+        </TextView>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:id="@+id/msc_card">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rec_courses">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+
+
+</FrameLayout>

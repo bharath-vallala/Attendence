@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/attendence_frag">
+
+    <fragment
+        android:id="@+id/attendence_frag"
+        android:name="com.example.attenence.Attendence_frag"
+        android:label="fragment_attendence_frag"
+        tools:layout="@layout/fragment_attendence_frag" />
+    <fragment
+        android:id="@+id/message_frag"
+        android:name="com.example.attenence.message_frag"
+        android:label="fragment_message_frag"
+        tools:layout="@layout/fragment_message_frag" />
+</navigation>
